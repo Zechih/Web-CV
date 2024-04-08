@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    text-align: justify;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height:297mm;
+    width:210mm;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    background-size: cover;
+}
+
+a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.5;
+    
+}
+
+h2,h3{
+    color: #f2f2f2; 
+    background: rgb(177, 167, 54); 
+    font-size: 20px; 
+    font-family: 'Libre Baskerville', serif; 
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    border-right: 7px solid black;
+    position:relative;
+    width: 35%;
+    background:white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.left a{
+    font-size: 20px;
+}
+
+.right{
+    background: rgb(116, 183, 134);
+    background-size: 400% 400%;
+    display:relative;
+    width: 65%;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.left_info{
+    width: 17%;
+    position:fixed;
+    height: 58%;
+    border-bottom:  10px double black;
+    background-color: #387e45;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.dashed {
+    --b: 5px;  /* border thickness */
+    --s: 30px; /* size of the dashes */
+    --c1: #215A6D;
+    --c2: #92C7A3;
+    width: 264px;
+    height: 300px;
+    position: relative;
+    top: 60%;
+}
+.dashed::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    padding: var(--b);
+    background: 
+      repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+      0 0/var(--s) var(--s) round;
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+}
+  
+.info{
+    text-align: left;
+    position: relative;
+    width: 100%;
+    height: 35%;
+    padding-left: 30px;
+}
+
+.info a{
+    line-height: 140%;
+    font-size:18px;
+}
+.contacts{
+    top: 6%;
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    background:#bde1c9;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+}
+
+.phone_pic{
+    margin-right: 15px;
+    height: 35px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+}
+
+.email_pic{
+    margin-right: 15px;
+    height: 35px;
+}
+
+.pic{
+    margin-top:10px ;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+.me{
+    width: 200px; 
+    height: 250px; 
+    display: row;
+    border: 10px;
+    border-radius: 20px;
+}
+
+.social_media{
+    z-index: 100;
+    padding-left: 10px;
+    position: fixed;
+    width: 250px; 
+    height: 100px; 
+    box-sizing: border-box;
+    top: 77%;
+    background:#9cc3a9;
+}
+
+.social_media a:hover{
+    border-radius: 5px;
+    font-size: 55px;
+    transition: 0.25s;
+}
+
+.square{
+    margin-top: 5px;
+    margin-left: 3px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border: 22px solid rgb(238, 243, 232);
+}
+
+.downloads{
+    position:fixed;
+    top: 93%;
+    width: 270px; 
+    height: 100px;
+    display: inline-flex;
+    justify-content: space-around
+}
+.download1,.download2{
+    height: 30px;
+    width: 80px;  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: black 3px solid;
+    background: #b7e642;
+    border-radius: 10px;
+}
+
+.download1:hover,.download2:hover{
+    background: rgb(177, 171, 171);
+    border:black 3px solid;
+}
+
+.download1 a,.download2 a{
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.download1 a:hover.download2 a:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.download_pic{
+    margin-right: 8px;
+    height: 30px;
+    width: 30px;
+}
+
+.download_pic:hover{
+    height: 33px;
+    width: 33px;
+
+}
+
+.intro{
+    padding: 20px;
+    display:relative;
+    width: 100%;
+    height:200px;
+    background: linear-gradient(rgb(116, 183, 134), rgb(173, 193, 178));
+    border-radius: 10px;
+
+}
+
+.interests{
+    padding: 20px;
+    display:relative;
+    width: 100%;
+    height:135px;
+    background: linear-gradient(rgb(116, 183, 134), rgb(173, 193, 178));
+    border-radius: 10px;
+}
+
+.skill_language{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(116, 183, 134), rgb(173, 193, 178));
+    border-radius: 10px;
+}
+
+.language{
+    padding: 20px;
+    padding-left: 25px;
+    width: 50%;
+    height:200px;
+    
+}
+
+.skill{
+    padding:20px;
+    padding-left: 25px;
+    width: 50%;
+    height:200px;
+   
+}
+.education_job{
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(116, 183, 134), rgb(173, 193, 178));
+    border-radius: 10px;
+}
+.education{
+    padding: 20px;
+    padding-left: 25px;
+    width: 50%;
+    
+}
+.job{
+    padding: 20px;
+    padding-left: 25px;
+    width: 50%;
+    
+}
+
+hr{
+    overflow: visible; 
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    line-height: 5px;
+}
+
+hr::before{
+    content: "---";
+    display: inline-block;
+    position: relative;
+    top: -0.3em;
+    height: 10px; 
+}
+  
+  
+.star {
+    display: inline-block;
+    color: gray;
+    font-size: 23px;
+    cursor: pointer;
+    position: relative; 
+}
+
+.filled{
+    color: gold;
+  }
+
+.half::before{
+    content: "\2605";
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    color: gold;
+}
+
+.profile a,.interests a,.job a{
+    font-size: 16px;
+}
+
+
+form{
+    color: white;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+}
+
+#Comments{
+    border-radius: 20px;
+    margin-left: -10px;
+    border: 3px dotted grey;
+    padding-left: 10px;
+}
+
+#switch{
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    top:10px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+#switch:hover{
+    font-size: 22px;
+    transition: 0.5s ease;
+}
+
+#back{
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    top:10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+#back:hover{
+    font-size: 22px;
+    transition: 0.5s ease;
+}

@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+    <head>  
+        <link rel="stylesheet" type="text/css" href="style1.css" id="styleSheet">
+            <title>
+                Chih Zhen En Portfolio
+            </title>
+    </head>
+
+    <form action="">  <!--User input element-->
+        <h4>Enter any comment:</h4>
+        <textarea id="Comments" rows="7" cols="25" style="text-align: left;" overflow:auto;>
+        </textarea>
+    </form>
+
+    <!--To return to main page-->
+    <button id="back" onclick="location.href='Index.html'">Back to Homepage</button> 
+    <!--To switch style-->
+    <button id="switch" onclick="toggleStyleSheet()">Switch style</button>
+    
+    <script>
+        var styleSheet1 = "style1.css";
+        var styleSheet2 = "style2.css";
+        var currentStyleSheet = styleSheet1;
+        
+        function toggleStyleSheet() {
+          var styleSheet = document.getElementById("styleSheet");
+          
+          if (currentStyleSheet === styleSheet1) {
+            styleSheet.href = styleSheet2;
+            currentStyleSheet = styleSheet2;
+          } else {
+            styleSheet.href = styleSheet1;
+            currentStyleSheet = styleSheet1;
+          }
+        }
+      </script>
+
+    <body>
+        <div class="left">
+            <div class="left_info">
+                <div class="pic">
+                    <img class="me" src="img/cropped.jpg">
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><a style="color: rgb(234, 143, 209)">Name : &nbsp;</a><a>Chih Zhen En</a>
+                        <li><a style="color: rgb(234, 143, 209)">Student ID : &nbsp;</a><a>A21EC0167</a>
+                        <li><a style="color: rgb(234, 143, 209)">Date of Birth : &nbsp;</a><a>29 May 2002</a>
+                        <li><a style="color: rgb(234, 143, 209)">Hometown : &nbsp;</a><a>Batu Pahat</a>
+                        <li><a style="color: rgb(234, 143, 209)">State : &nbsp;</a><a>Johor</a>
+                        <li><a style="color: rgb(234, 143, 209)">Country : &nbsp;</a><a>Malaysia</a>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h3>CONTACTS</h3>
+                    <hr>
+                    <div class="phone">
+                        <img class="phone_pic" src=img/phone-regular-24.png>
+                        <a>0108215867</a>
+                    </div>
+                    <div class="email">
+                        <img class="email_pic" src=img/briefcase-regular-24.png>
+                        <a>02zechih@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashed">
+            </div>
+
+            <div class="social_media">    
+                <h3>SOCIAL MEDIA</h3>
+                <hr>
+                <div style="display: flex; justify-content: space-around; align-items: center; width: 85%; ">
+                    <div style="width: 10px; height: 10px;">
+                        <div class="square">
+                        </div>
+                        <a href="https://www.instagram.com/zhenen____/?hl=en" target="_blank" class="btn"><img src="img/instagram-logo-60.png" alt="WhatsApp Icon" style="width: 50px; height: 50px;"></a>
+                    </div>
+                    <div style="width: 10px; height: 10px;">
+                        <div class="square">
+                        </div>
+                        <a href="https://www.facebook.com/chihzhenen" target="_blank" class="btn"><img src="img/facebook-circle-logo-60.png" alt="WhatsApp Icon" style="width: 50px; height: 50px;"></a>
+                    </div>
+                    <div style="width: 10px; height: 10px;">
+                        <div class="square">
+                        </div>
+                        <a href="mailto:02zechih@gmail.com" target="_blank" class="btn"><img src="img/gmail-logo-60.png" alt="WhatsApp Icon" style="width: 50px; height: 50px;"></a>
+                    </div>
+                    <div style="width: 10px; height: 10px;">
+                        <div class="square">
+                        </div>
+                        <a href="https://wa.me/+60108215867" target="_blank" class="btn"><img src="img/whatsapp-logo-60.png" alt="WhatsApp Icon" style="width: 50px; height: 50px;"></a>
+                    </div>
+                </div>
+            </div>               
+            
+            <div class="downloads">
+                <!--To download CV style1 to user computer-->
+                <div class="download1">
+                    <a href="ChihZhenEn_CV1.pdf" download target="_blank" class="button" > <img class="download_pic" src=img/download-regular-24.png>CV1</a>
+                </div>
+                <!--To download CV style2 to user computer-->
+                <div class="download2">
+                    <a href="ChihZhenEn_CV2.pdf" download target="_blank" class="button" > <img class="download_pic" src=img/download-regular-24.png>CV2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="intro">
+                <h2>PROFILE</h2>
+                <hr>
+                <a>
+                Throughout my academic career, I have gained experience in programming languages such as 
+                Java, C++ and HTML. I have also gained experience in database management and software 
+                testing methodologies. In addition to my technical skills, I possess strong problem-solving and 
+                analytical skills. I am a quick learner and enjoy working collaboratively with others to solve complex 
+                problems.
+                </a>
+            </div>
+
+            <div class="interests">
+                <h2>INTERESTS</h2>
+                <hr>
+                <a>Apart from being a software engineering student, I enjoy most of my time being outdoors. 
+                I am a basketball player and piano lover. I like to spend time exploring the front-end web development world.</a>
+            </div>
+
+            <div class="skill_language">
+                <div class="skill">
+                    <h2>SKILL</h2>
+                    <hr>
+                    <ul>
+                        <li><a>C++&nbsp;&nbsp;
+                            <span class="meter" style="width: 25%"></span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star ">&#9733;</span>                           
+                        </li>
+                        <li><a>Java&nbsp;&nbsp;</a>
+                            
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star half">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                        </li>
+                        <li><a>HTML&nbsp;&nbsp;</a>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star half">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                        </li>
+                        <li><a>Video Editing&nbsp;&nbsp;</a>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star half">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="language">
+                    <h2>LANGUAGE</h2>
+                    <hr>
+                    <ul><a>
+                        <li>English
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                        </li>
+                        <li>Chinese
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star half">&#9733;</span>
+                        </li>
+                        <li>Malay
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                        </li>
+                        <li>Cantonese
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star half">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                                <span class="star ">&#9733;</span>
+                        </li>
+                    </a></ul>
+                </div>
+            </div>
+
+            <div class="education_job">
+                <div class="education">
+                    <h2>EDUCATION</h2>
+                    <hr>
+                    <ul ><a>
+                        <li>Universiti Teknologi Malaysia (UTM)
+                            <p style="font-size: 13px;">10/2021 - Present</p></li>
+                        <li>Foundation in Physical Science
+                            UTMSPACE
+                            <p style="font-size: 13px;">07/2020 - 08/2021</p></li>
+                    </a></ul>
+                </div>
+                <div class="job">
+                    <h2>JOB EXPERIENCE</h2>
+                    <hr>
+
+                    <ul ><a>
+                        <li>Tuition teacher
+                        <li>Event crew
+                        <li>Waiter
+                        <li>Promoter
+                        <li>Cashier
+                    </a></ul>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
